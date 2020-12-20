@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   line-height: 1.6;
 }
 
@@ -70,7 +70,7 @@ a {
 /* API SECTION */
 
 .app-wrap {
-  z-index: 1;
+  /* z-index: 1;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,13 @@ a {
   border-radius: 10px;
   opacity: 0.8;
   margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-left: 3rem; */
+  display: flex;
+  flex-direction: column;
+  background-image: url(../air-pollution\ background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)); */
 }
 
 .app-wrap header {
@@ -95,6 +101,7 @@ a {
 
 .app-wrap header h2 {
   font-size: 3em;
+  color: white;
 }
 
 .app-wrap header input {
@@ -124,15 +131,21 @@ header input :focus {
 }
 
 .location .city {
-  font-weight: bolder;
+  /* font-weight: bolder;
   font-size: 1.5rem;
   font-family: Verdana;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .location .date {
-  font-weight: bold;
-  font-style: italic;
+  /* font-weight: bold;
+  font-style: italic; */
+  color: white;
+  font: size 16px;
 }
 
 .coordinates {
@@ -142,39 +155,65 @@ header input :focus {
 }
 
 .coordinates .lat {
+  /* font-weight: normal;
+  font-size: 1.55rem; */
+  color: white;
+  font-size: 30px;
   font-weight: normal;
-  font-size: 1.55rem;
+  margin: 30px 0px;
+  text-shadow: 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .coordinates .lon {
+  /* font-weight: normal;
+  font-size: 1.50rem; */
+  color: white;
+  font-size: 30px;
   font-weight: normal;
-  font-size: 1.50rem;
+  margin: 30px 0px;
+  text-shadow: 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 #lat-value {
   font-family: Montserrat;
   font-size: 1.4rem;
   font-weight: bold;
+  color: white
 }
 
 #lon-value {
   font-family: Montserrat;
   font-size: 1.3rem;
   font-weight: bold;
+  color: white
+}
+
+/* new css update */
+
+.air-quality {
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .weather {
-  text-align: center;
+  /* text-align: center;
   margin-bottom: 2rem;
   font-weight: bold;
   color: rgb(5, 5, 5);
   font-size: 70px;
-  font-family: Concert One;
+  font-family: Concert One; */
+  color: white;
+  font-size: 102px;
+  text-align: center;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 4px 12px rgba(0, 0, 0, 0.6);
 }
 
-
-
 /* Slider pictures */
+
 img {
   display: block;
   max-width: 100%;
@@ -201,6 +240,10 @@ img {
   margin-right: 10px;
 }
 
+a:hover {
+  color: rgba(6, 61, 128, 0.947);
+}
+
 .lil-nav__img {
   object-fit: cover;
   filter: saturate(0);
@@ -223,6 +266,26 @@ img {
   text-align: center;
   letter-spacing: .2rem;
   text-transform: uppercase;
+}
+
+.social-media-links {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Social Media Links */
+
+.fa {
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.9;
+}
+
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
+  color: #000000;
 }
 
 #searchbar {
