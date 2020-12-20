@@ -1,51 +1,47 @@
 .flexbox-header {
-    text-align: center
-}
-
-.align-center {
     text-align: center;
+    font-size: 50px;
+    font-family: 'JetBrains Mono', monospace;
 }
 
-.align-right {
-    text-align: right;
-}
-
-.align-left {
-    text-align: left;
+.mission-header .para{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    width:960px;
 }
 
 .flexbox-container {
     display: flex;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 18px
 }
 
-.flexbox-container span {
+.flexbox-container a {
     text-decoration: underline;
-    font-size: 15px;
-    color: rgb(27, 189, 238);
+    font-size: 17px;
+    color: rgb(238, 41, 27);
 }
 
-/* #air1 {}
-
-#air2 {}
-
-#air3 {} */
 
 .flexbox-item {
-    width: 200px;
+    width: 150px;
     margin: 10px;
-    /* border: 3px solid #333; */
+    box-shadow: 1px 2px 1px 1px  rgb(63, 144, 211);
     background-color: #dfdfdf;
 }
 
 .flexbox-item img {
-    width: 440px;
-    height: 317px;
-    border: 3px solid #333;
+    width: 100%;
+    height: 350px;
 }
 
 .flexbox-item h2 {
     text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
 }
 
 a:hover {
@@ -54,6 +50,8 @@ a:hover {
 
 .flexbox-item p {
     text-align: center;
+    margin-left: 22px;
+    width: 90%;
 }
 
 .flexbox-item-1 {

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Hope</title>
 </head>
 
@@ -14,10 +16,76 @@
         <h1 class="logo"><a href="index.html">Pollution Patron</a></h1>
         <ul class="main-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="mission.html">Our mission</a></li>
+            <li><a href="#mission-header">Our mission</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
+
+    <!-- WHAT IT IS AIR POLLUTION SECTION -->
+
+    <div class="first-section">
+        <figure>
+            <img src="./assets/img/Air-Pollution.png" alt="air pollution gallery">
+        </figure>
+        <div class="healthyAir">
+            <h2>Air Pollution and Your Health</h2>
+            <p>Air pollution is a familiar environmental health hazard. We know what we’re looking at when brown haze settles over a city, exhaust billows across a busy highway, or a plume rises from a smokestack. Some air pollution is not seen, but its pungent smell alerts you. <br><br> When the National Ambient Air Quality Standards were established in 1970, air pollution was regarded primarily as a threat to respiratory health. Over the next decades as air pollution research advanced, public health concern broadened to include cardiovascular disease; diabetes mellitus; obesity; and reproductive, neurological, and immune system disorders. <br><br> Air pollution exposure is associated with oxidative stress and inflammation in human cells, which may lay a foundation for chronic diseases and cancer. In 2013, the International Agency for Research on Cancer of the World Health Organization (WHO) classified air pollution as a human carcinogen.Air pollution is a mix of hazardous substances from both human-made and natural sources. </p>
+        </div>
+    </div>
+
+    <!-- FLEXBOX SECTION -->
+    <div id="mission-header">
+        <h2 class="flexbox-header">What's Our Mission?</h2>
+        <p class="para">
+            We are at a critical point. There is a public health emergency from air pollution and a global climate
+            crisis. In today’s world, the Climate and Clean Air Coalition is more needed than ever. Our vision is an
+            atmosphere that enables people and the planet to thrive – a stabilized climate with warming limited to 1.5ºC
+            and drastically reduced air pollution. In the next decade we will work to put the world on a pathway that
+            rapidly reduces warming in the near-term and maximizes development health, environmental and food security
+            benefits. </p>
+    </div>
+
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1">
+            <img src="https://assets.unenvironment.org/s3fs-public/styles/article_billboard_image/public/2019-05/Five%20things%202%20Photo%20by%20Pxhere.jpg?itok=WhEv1jtC"
+                alt="Airpollutuion" id="air1">
+            <h2>What can we do?</h2>
+            <p>Short-lived climate pollutants - including black carbon, methane, hydrofluorocarbons, and tropospheric
+                ozone – are powerful climate forcers with global warming potentials many times that of carbon dioxide.
+                They also significantly impact food, water and economic security for large populations throughout the
+                world, both directly through their negative effects on public health, agriculture and ecosystems, and
+                indirectly through their impact on the climate.<br>
+                <a href="https://www3.epa.gov/region1/airquality/reducepollution.html">Click To Learn More</a> </p>
+        </div>
+
+        <div class="flexbox-item flexbox-item-2">
+            <img src="https://worldgbc.org/sites/default/files/AIr%20Quaity%20in%20the%20Built%20Environment%20Polluted%203_0.jpg"
+                alt="Airpolluture" id="air2">
+            <h2>Facts About Air Pollution</h2>
+            <p> It is the deadliest form of pollution, killing millions of people each year, according to a new
+                study. The Cost of Air Pollution, a joint report by the World Bank and the Institute for Health Metrics
+                and Evaluation (IHME), also highlights the economic toll, showing that premature deaths linked to air
+                pollution cost the global economy hundreds of billions of dollars in lost labour income. 92%
+                More than nine out of 10 of the world’s population.<br>
+                <a href="https://www.nrdc.org/stories/air-pollution-everything-you-need-know">Click To Learn More</a>
+            </p>
+        </div>
+
+        <div class="flexbox-item flexbox-item-2">
+            <img src="https://cdn2.momjunction.com/wp-content/uploads/2015/11/Air-Pollution-Facts.jpg"
+                alt="Airpolluture" id="air3">
+            <h2>Resources</h2>
+            <p> Agency for Toxic Substances and Disease Registry (ATSDR) Brownfield/Land Reuse Initiative. ATSDR Dose
+                Calculator.
+                The ATSDR Dose Calculator is a computer program that allows users to computer the amount of a toxic
+                substance an individual may be exposed to (dose). Users of this tool can select from air, soil, water,
+                or fish consumption scenarios; customize exposure parameters; and review ATSDR and EPA health comparison
+                values, among other features.<br>
+                <a
+                    href="https://19january2017snapshot.epa.gov/communityhealth/air-pollution-resources-community-health_.html">Click
+                    To Learn More</a> </p>
+        </div>
+    </div>
 
     <!-- API SECTION  -->
     <div class="app-wrap">
@@ -35,30 +103,51 @@
             <div class="lon">Long.</div>
             <span id="lon-value">--</span>
         </div>
-        <div class="air-quality">
-            <div class="">Air Quality Index</div>
-            <span id="air-quality-index">--</span>
-            <div class="">Concentration of Carbon Monoxide</div>
-            <span id="carbon-monoxide">--</span>
-            <div class="">Сoncentration of Nitric Oxide</div>
-            <span id="nitric-oxide">--</span>
-            <div class="">Concentration of Nitrogen Dioxide</div>
-            <span id="nitro-dioxide">--</span>
-            <div class="">Concentration of Ozone</div>
-            <span id="ozone">--</span>
-            <div class="">Concentration of Sulphur Dioxide</div>
-            <span id="sulphur-dioxide">--</span>
-            <div class="">Concentration of Fine Particle Matter</div>
-            <span id="fine-particle">--</span>
-            <div class="">Concentration of Coarse Particulate Matter</div>
-            <span id="p-matter">--</span>
-            <div class="">Concentration of Ammonia</div>
-            <span id="ammonia">--</span>
-        </div>
         <div class="weather">
             <span id="temp">--&deg;C</span>
         </div>
-
+        <div class="air-quality">
+            <div class="format-airQuality">
+                <div class="">Air Quality Index</div>
+                <hr>
+                <div class="">Concentration of Carbon Monoxide</div>
+                <hr>
+                <div class="">Сoncentration of Nitric Oxide</div>
+                <hr>
+                <div class="">Concentration of Nitrogen Dioxide</div>
+                <hr>
+                <div class="">Concentration of Ozone </div>
+                <hr>
+                <div class="">Concentration of Sulphur Dioxide</div>
+                <hr>
+                <div class="">Concentration of Fine Particle Matter </div>
+                <hr>
+                <div class="">Concentration of Coarse Particulate Matter </div>
+                <hr>
+                <div class="">Concentration of Ammonia </div>
+                <hr>
+            </div>
+            <div class="airQuality-results">
+                <span id="air-quality-index"> --</span>
+                <hr>
+                <span id="carbon-monoxide"> --</span>
+                <hr>
+                <span id="nitric-oxide"> --</span>
+                <hr>
+                <span id="nitro-dioxide"> --</span>
+                <hr>
+                <span id="ozone"> --</span>
+                <hr>
+                <span id="sulphur-dioxide"> --</span>
+                <hr>
+                <span id="fine-particle"> --</span>
+                <hr>
+                <span id="p-matter"> --</span>
+                <hr>
+                <span id="ammonia"> --</span>
+                <hr>
+            </div>
+        </div>
     </div>
 
     </div>
@@ -69,31 +158,31 @@
             <a href="#image-1">
                 <img class="lil-nav__img"
                     src="https://www.health.harvard.edu/media/content/images/p1_AirPollution_HH1710_ts534781505.jpg"
-                    alt="Bottles" />
+                    alt="air quality" />
             </a>
             <a href="#image-2">
                 <img class="lil-nav__img" src="https://www.niehs.nih.gov/health/assets/images/air_pollution_og.jpg"
-                    alt="Houses" />
+                    alt="air quality" />
             </a>
             <a href="#image-3">
                 <img class="lil-nav__img"
                     src="https://www.conserve-energy-future.com/wp-content/uploads/2013/11/air-pollution-smoke-emission.jpg"
-                    alt="Beach waste" />
+                    alt="air quality" />
             </a>
             <a href="#image-4">
                 <img class="lil-nav__img"
                     src="https://im-media.voltron.voanews.com/Drupal/01live-166/styles/sourced/s3/2019-04/C26F3B02-AC62-4201-8A8F-A393B9D61C33.jpg?itok=9sFa7Y_H"
-                    alt="Town" />
+                    alt="air quality" />
             </a>
             <a href="#image-5">
                 <img class="lil-nav__img"
                     src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/News/general-health/961-air_pollution_and_premature_death-1296x728-header.jpg?w=1155&h=1528"
-                    alt="Town" />
+                    alt="air quality" />
             </a>
             <a href="#image-6">
                 <img class="lil-nav__img"
                     src="https://i1.wp.com/www.opindia.com/wp-content/uploads/2019/11/punjab-stubble-buring-759.jpg?fit=759%2C422&ssl=1"
-                    alt="Water" />
+                    alt="air quality" />
             </a>
         </nav>
     </section>
@@ -102,11 +191,11 @@
     <footer id="footer">
         <div class='footer-text'>
             <div class="copyright">
-                <p>&copy; 2020 (WEB-NAME) | OFFICIAL PAGE. ALL RIGHTS RESERVED.</p>
+                <p>&copy; 2020 Pollution Patron | OFFICIAL PAGE. ALL RIGHTS RESERVED.</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">| Home page |</a>
-                <a href="mission.html"> Our mission |</a>
+                <a href="#mission-header"> Our mission |</a>
                 <a href="contact.html"> Contact |</a>
                 <a href="https://www.cleanairblueskies.org/did-you-know/frequently-asked-questions-air-pollution"> FAQ
                     |</a>
