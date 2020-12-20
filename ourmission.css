@@ -19,6 +19,12 @@
     justify-content: center;
 }
 
+.flexbox-container span {
+    text-decoration: underline;
+    font-size: 15px;
+    color: rgb(27, 189, 238);
+}
+
 /* #air1 {}
 
 #air2 {}
@@ -38,7 +44,7 @@
     border: 3px solid #333;
 }
 
-.flexbox-item h1 {
+.flexbox-item h2 {
     text-align: center;
 }
 
