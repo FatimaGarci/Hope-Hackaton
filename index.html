@@ -17,7 +17,7 @@
         <ul class="main-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="#mission-header">Our mission</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#container">Contact</a></li>
         </ul>
     </header>
 
@@ -29,7 +29,16 @@
         </figure>
         <div class="healthyAir">
             <h2>Air Pollution and Your Health</h2>
-            <p>Air pollution is a familiar environmental health hazard. We know what we’re looking at when brown haze settles over a city, exhaust billows across a busy highway, or a plume rises from a smokestack. Some air pollution is not seen, but its pungent smell alerts you. <br><br> When the National Ambient Air Quality Standards were established in 1970, air pollution was regarded primarily as a threat to respiratory health. Over the next decades as air pollution research advanced, public health concern broadened to include cardiovascular disease; diabetes mellitus; obesity; and reproductive, neurological, and immune system disorders. <br><br> Air pollution exposure is associated with oxidative stress and inflammation in human cells, which may lay a foundation for chronic diseases and cancer. In 2013, the International Agency for Research on Cancer of the World Health Organization (WHO) classified air pollution as a human carcinogen.Air pollution is a mix of hazardous substances from both human-made and natural sources. </p>
+            <p>Air pollution is a familiar environmental health hazard. We know what we’re looking at when brown haze
+                settles over a city, exhaust billows across a busy highway, or a plume rises from a smokestack. Some air
+                pollution is not seen, but its pungent smell alerts you. <br><br> When the National Ambient Air Quality
+                Standards were established in 1970, air pollution was regarded primarily as a threat to respiratory
+                health. Over the next decades as air pollution research advanced, public health concern broadened to
+                include cardiovascular disease; diabetes mellitus; obesity; and reproductive, neurological, and immune
+                system disorders. <br><br> Air pollution exposure is associated with oxidative stress and inflammation
+                in human cells, which may lay a foundation for chronic diseases and cancer. In 2013, the International
+                Agency for Research on Cancer of the World Health Organization (WHO) classified air pollution as a human
+                carcinogen.Air pollution is a mix of hazardous substances from both human-made and natural sources. </p>
         </div>
     </div>
 
@@ -188,7 +197,43 @@
     </section>
 
     <!-- CONTACT FORM -->
-    
+    <section id="container">
+        <h6>Contact form</h6>
+        <form name="form" method="GET">
+
+            <section class="form-group">
+                <h6> First Name </h6>
+                <label for="firstname"> First Name: </label>
+                <input type="text" name="First Name" id="firstname" required>
+            </section>
+
+            <section class="form-group">
+                <h6> Last Name </h6>
+                <label for="lastname"> Last Name: </label>
+                <input type="text" name="Last Name" id="lastname" required>
+            </section>
+
+            <section class="form-group">
+                <h6> Phone Number </h6>
+                <label for="number"> Phone Number: </label>
+                <input type="text" name="Phone Number" id="number" required>
+            </section>
+
+            <section class="form-group">
+                <h6> Email </h6>
+                <label for="email"> Email: </label>
+                <input type="text" name="Email" id="email" required>
+            </section>
+
+
+            <section class="form-group">
+                <h6> Message </h6>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+            </section>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </section>
     <!-- FOOTER -->
     <footer id="footer">
         <div class='footer-text'>
@@ -198,7 +243,7 @@
             <div class="footer-links">
                 <a href="index.html">| Home page |</a>
                 <a href="#mission-header"> Our mission |</a>
-                <a href="contact.html"> Contact |</a>
+                <a href="#container"> Contact |</a>
                 <a href="https://www.cleanairblueskies.org/did-you-know/frequently-asked-questions-air-pollution"> FAQ
                     |</a>
             </div>
