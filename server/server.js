@@ -1,15 +1,11 @@
 const express = require('express');
-
 const cors = require('cors')
-
 var app = express();
-
 app.use(express.json());
-
 app.use(cors())
 
-var data = require('./extinct.json')
 
+var data = require('./extinct.json')
 
 app.get('/Extinct', (req, res) => {
     if (!data) {

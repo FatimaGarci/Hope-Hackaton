@@ -1,3 +1,48 @@
+const search = document.getElementById('search');
+const matchList = document.getElementById('match-list');
+
+// Search the animals json and filter it
+const searchAnimal = async searchText =>{
+    const res = await fetch(' http://localhost:3000/extinct'); //call the json file
+    // const res = await fetch('./extinct.json'); //call the json file
+    const animals = await res.json(); //give us the items inside of the json
+
+    // console.log(animals);
+
+    // Get matches to current text input 
+    let matches = animals.filter(animal => {
+        const regex = new RegExp(`^${searchText}`, 'gi');
+        return animal.name.match(regex); 
+    });
+        // console.log(matches);
+
+    if(searchText.length === 0){
+        matches = []; //clear the arrays when dlete in the search bar
+        matchList.innerHTML = '';
+    }
+
+    outputHtml(matches);
+};
+
+// show results in HTML
+const outputHtml = matches =>{
+    if (matches.length > 0){ //map returns an array from an array
+        const html = matches.map(match => `
+        <div class="card">
+            <h3>${match.name}<span> | ${match.category}</span> </h3>
+            <p>${match.year}</p>
+            <p class="filter-description">${match.description}</p>
+        </div>
+        `).join('');
+        // console.log(html);
+
+        matchList.innerHTML = html;
+    }
+}
+search.addEventListener('input', () => searchAnimal(search.value));
+
+
+/*Third API CODE */
 const api = {
     key: "5b8313a4583e251d0d16711e6335d75c",
     base: "https://api.openweathermap.org/data/2.5/", //air quality api
