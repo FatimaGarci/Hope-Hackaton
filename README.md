@@ -1,6 +1,6 @@
 <img width="1300" alt="screeshot" src="https://user-images.githubusercontent.com/48693015/102834543-55f88980-43c2-11eb-822e-b8bc905fe0dd.png">
 
-# HELLO! Welcome to Pollution Patrol
+# Welcome to Pollution Patrol
 >Our planet as we know it is dying!! Due to constant human actions such as deforestation, constant use of Fossil Fuels, Wars and not recycling waste products. We are destroying our Eco system thus destroying life as we know it. Presently millions of animals and insects have gone extinct because of this. If we keep up such actions with no posibility of changing Planet Earth as we know it will be no more. Our Air quality is at an alarming state, glacies are melting hence increasing global warming. That's why we built this app to create awareness and provide resources to people that would like to know more and possibly help this issue.
 
 ## Getting Started
